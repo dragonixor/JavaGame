@@ -26,16 +26,30 @@ This command will save your changes and you can reapply them by doing
 2. Once you have done some work that has been ***TESTED THOUROUGHLY*** to make sure it is ***FUNCTIONAL***
 do the following commands:
 	
-	$git add .
-This command adds all your files to the commit stage. The space (" ") and the period (".") specifies
+a)	$git add .
+This command adds all your files to the "pre-commit" stage. The space (" ") and the period (".") specifies
 that you will add all the files.
 
-	$git commit -m"Your initials- A message detailing what you commited to the repo"
+Warning: It's generally not a good practice to always add all the files
+but for our project it shouldn't be a problem. If you want to add only one file to the "pre-commit" stage
+you do this
+	$git add nameOfFile.extension
+
+Warning: If you want to remove a specific file from the "pre-commit" stage use
+	$git reset fileName.extension
+
+or use to reset all the added files
+	$git reset
+
+
+b)	$git commit -m"Your initials- A message detailing what you commited to the repo"
 This command will commit all your changes. Make sure to always make a message in the format 
 described here and shown above:
 Start with your initials and follow it with the description so we can see who commited what.
 Being concise is highly advised because some people that are also idiots might completely 
 ignore the commit message.
 
-	$git push
-This command updates the repo with the files you have previously commited.
+c)	$git push
+This command updates the repo with the files you have previously commited. Notifying your teammates
+that you pushed something is recommended but if you trust that your teammates are smart enough to pull
+first, then its up to you if you want to tell them that you accomplished something.
