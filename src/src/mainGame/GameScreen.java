@@ -127,7 +127,8 @@ public class GameScreen extends JPanel implements ActionListener, KeyListener{
 
 	@Override
 	public void keyTyped(KeyEvent ke) {/*Not useful for now*/}
-
+	
+	//Updates the screen.
 	@Override
 	public void actionPerformed(ActionEvent ae) {
 		repaint();

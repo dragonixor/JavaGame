@@ -18,7 +18,7 @@ public class Main extends JFrame{
 	/*------Functions used in the main program------*/
 	public Main() {
 		//Window setup
-		super("Shit Nuts");
+		super("Game window");
 		setSize(SCREEN_WIDTH,SCREEN_HEIGHT);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
