@@ -1,0 +1,5 @@
+To do list:
+
+1. Make movement speed dependent rather than position dependent.
+2. Implement direction to the movement to allow curves.
+3. Implement real collision detection.
