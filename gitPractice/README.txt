@@ -1,5 +1,9 @@
 Here's a list of linux bash commands: https://ss64.com/bash/
 Here's the git documentation: https://git-scm.com/docs
+Removing commits: https://sethrobertson.github.io/GitFixUm/fixup.html#remove_last
+Removing adds: http://data.agaric.com/undo-git-add-remove-files-staged-git-commit
+
+"Refer to the documentation before asking questions" -Fucking everyone (2018)
 
 Warning: A $ symbol means the beginning of a command. You do not need to write $
 in front of every command in the console. This is just to differentiate text from a command.
@@ -48,6 +52,10 @@ described here and shown above:
 Start with your initials and follow it with the description so we can see who commited what.
 Being concise is highly advised because some people that are also idiots might completely 
 ignore the commit message.
+
+Warning: To remove files you have already commited, use
+	$git reset HEAD^
+It will reset your commit stage to the one of the repo.
 
 c)	$git push
 This command updates the repo with the files you have previously commited. Notifying your teammates
